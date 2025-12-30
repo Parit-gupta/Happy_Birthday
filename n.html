@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Special Message 💛</title>
+    <link rel="stylesheet" href="n.css" />
+  </head>
+  <body>
+    <!-- Stars & Shooting Stars Background -->
+    <div class="stars" id="starsContainer"></div>
+
+    <!-- Floating Planets -->
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+    <div class="planet planet3"></div>
+
+    <!-- SECTION 1: Beautiful Slideshow -->
+    <div class="section active slideshow-section" id="slideshowSection">
+      <div class="slideshow-container" id="slideshowContainer"></div>
+    </div>
+
+    <!-- SECTION 2: Message Card with Audio -->
+    <div class="section card-section" id="cardSection">
+      <div class="message-card">
+        <div class="floating-text" id="floatingText"></div>
+
+        <div class="audio-box">
+          <p>🎧 A special message for you</p>
+          <audio id="voiceNote" controls>
+            <source
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="card-buttons">
+          <button class="action-btn see-more-btn" id="seeMoreBtn">
+            See More Images 📸
+          </button>
+          <button class="action-btn celebrate-btn" id="celebrateBtn">
+            Celebrate! 🎉
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Full Image Gallery -->
+    <div class="section gallery-section" id="gallerySection">
+      <h2 class="gallery-title">✨ Beautiful Memories ✨</h2>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery images will be dynamically generated -->
+      </div>
+      <button
+        class="action-btn celebrate-btn"
+        id="celebrateBtn2"
+        style="margin: 0 auto 40px; display: block"
+      >
+        Celebrate! 🎉
+      </button>
+
+      <!-- Scroll to Top Button -->
+      <button class="scroll-top-btn" id="scrollTopBtn" title="Scroll to top">
+        ↑
+      </button>
+    </div>
+
+    <script src="n.js"></script>
+  </body>
+</html>
