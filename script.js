@@ -1,3 +1,29 @@
+ // Auto-play background music immediately
+  window.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("backgroundMusic");
+    music.volume = 0.3; // Set volume to 30%
+
+    // Try to autoplay immediately
+    const playPromise = music.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          console.log("🎵 Background music started automatically!");
+        })
+        .catch((error) => {
+          console.log("Autoplay blocked by browser - will play on first interaction");
+          
+          // Play music on first user interaction (click anywhere)
+          document.addEventListener("click", function playOnClick() {
+            music.play()
+              .then(() => console.log("Music started after user click"))
+              .catch((e) => console.log("Play failed:", e));
+          }, { once: true });
+        });
+    }
+  });
+
 // STARS
 const starsContainer = document.getElementById("starsContainer");
 for (let i = 0; i < 100; i++) {
