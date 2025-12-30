@@ -73,11 +73,11 @@ const imageData = [
   },
   {
     src: 'eight.jpeg',
-    text: 'pitne vaale kaaamc👋👋👋😂'
+    text: 'pitne vaale kaaam👋👋👋😂'
   },
   {
     src: 'three.jpeg',
-    text: 'Adventures together, creating memories that last a lifetime 🌈'
+    text: 'random pic'
   },
   {
     src: 'one.jpeg',
@@ -97,11 +97,11 @@ const imageData = [
   },
   {
     src: 'two.jpeg',
-    text: 'Your kindness touches everyone around you 💝'
+    text: 'Your kindness touches everyone around you Dhruve💝'
   },
   {
     src: 'nine.jpeg',
-    text: 'Creating magic in ordinary moments ✨'
+    text: 'Creating magic in ordinary moments Dhruve✨'
   },
   {
     src: 'ten.jpeg',
@@ -113,7 +113,7 @@ const imageData = [
   },
   {
     src: 'five.jpeg',
-    text: 'Your spirit inspires everyone you meet 🦋'
+    text: 'Your spirit inspires everyone you meet Dhrve Boy🦋'
   },
   {
     src: 'thirteen.jpeg',
@@ -121,7 +121,7 @@ const imageData = [
   },
   {
     src: 'fourteen.jpeg',
-    text: 'You make the world a better place just by being you 🌍'
+    text: 'You make the world a better place just by being you Dhruve'
   },
   {
     src: 'fifteen.jpeg',
