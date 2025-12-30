@@ -160,7 +160,7 @@ enterBtn.addEventListener("click", () => {
   
   // Simulate processing delay for better UX
   setTimeout(() => {
-    if (password === "dhruve") {
+    if (password === "dhruv") {
       // SUCCESS
       clearInterval(placeholderInterval); // Stop placeholder animation
       errorEl.style.color = "#6bcf7f";
