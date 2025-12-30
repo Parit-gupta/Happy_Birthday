@@ -93,7 +93,7 @@ const imageData = [
   },
   {
     src: 'seven.jpeg',
-    text: 'Celebrating the little things that mean everything 🎉'
+    text: 'Just randomly roaming 🎉'
   },
   {
     src: 'two.jpeg',
