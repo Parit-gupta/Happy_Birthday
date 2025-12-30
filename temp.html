@@ -132,6 +132,9 @@
   </head>
 
   <body>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="happy-birthday-254480.mp3" type="audio/mpeg" />
+    </audio>
     <!-- 🔥 Fireworks canvas -->
     <canvas id="fireworks"></canvas>
 
@@ -143,14 +146,6 @@
       <div class="fuego"></div>
       <div class="fuego"></div>
     </div>
-
-    <!-- 🎂 YOUR FULL SVG CAKE (UNCHANGED) -->
-    <!-- (kept exactly as you sent, no edits) -->
-    <!-- [SVG CONTENT CONTINUES HERE — unchanged] -->
-    <!-- I am not truncating it to avoid breaking animations -->
-    <!-- KEEP YOUR SVG EXACTLY AS IT IS BELOW THIS LINE -->
-
-    <!-- 🔴 PASTE YOUR SVG HERE EXACTLY (already included above in your editor) -->
 
     <svg
       id="cake"
@@ -474,6 +469,37 @@
         requestAnimationFrame(animate);
       }
       animate();
+    </script>
+    <script>
+      // Auto-play background music on temp.html
+      window.addEventListener("DOMContentLoaded", () => {
+        const music = document.getElementById("bgMusic");
+        music.volume = 0.4; // Set volume to 40%
+
+        // Try to autoplay
+        const playPromise = music.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              console.log("🎵 Birthday music started!");
+            })
+            .catch((error) => {
+              console.log("Autoplay blocked - trying on user interaction");
+              // Play on first click if autoplay is blocked
+              document.addEventListener(
+                "click",
+                function playOnClick() {
+                  music
+                    .play()
+                    .then(() => console.log("Music playing after click"))
+                    .catch((e) => console.log("Play failed"));
+                },
+                { once: true }
+              );
+            });
+        }
+      });
     </script>
   </body>
 </html>

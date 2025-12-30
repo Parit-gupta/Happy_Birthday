@@ -77,7 +77,7 @@ const imageData = [
   },
   {
     src: 'three.jpeg',
-    text: 'random pic'
+    text: 'The first time we celebrated pongal together'
   },
   {
     src: 'one.jpeg',
@@ -89,7 +89,7 @@ const imageData = [
   },
   {
     src: 'six.jpeg',
-    text: 'Through thick and thin, always together 🤝'
+    text: 'The first cultural fest together 🤝'
   },
   {
     src: 'seven.jpeg',
@@ -101,7 +101,7 @@ const imageData = [
   },
   {
     src: 'nine.jpeg',
-    text: 'Creating magic in ordinary moments Dhruve✨'
+    text: 'Old clothes and New clothes✨'
   },
   {
     src: 'ten.jpeg',
@@ -362,9 +362,11 @@ document.getElementById('seeMoreBtn').addEventListener('click', () => {
 });
 
 document.getElementById('celebrateBtn').addEventListener('click', () => {
-  window.location.href = 'temp.html';
+  sessionStorage.setItem("fromCelebrate", "true");
+  window.location.href = "temp.html";
 });
 
 document.getElementById('celebrateBtn2').addEventListener('click', () => {
-  window.location.href = 'temp.html';
+  sessionStorage.setItem("fromCelebrate", "true");
+  window.location.href = "temp.html";
 });
